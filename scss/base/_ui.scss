@@ -1,0 +1,48 @@
+* {
+  outline: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  background: #f8f8f8;
+  color: #424543;
+}
+
+.full-width {
+  width: 100%;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+.sticky-page {
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container {
+  @media (min-width: 1200px) {
+    width: 100%;
+    max-width: 980px;
+  }
+
+  @media (min-width: 768px) { 
+    padding: 0;
+  }
+
+  @media (min-width: 992px) {
+    width: 960px;
+    padding: 0;
+  }
+
+  @media (max-width: 991px) {
+    padding: 0;
+    width: 100%;
+    max-width: 768px;
+  }
+}
